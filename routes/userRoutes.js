@@ -12,6 +12,8 @@ const{sendOTP,login,signup}=require("../controler/auth")
 router.post("/send/otp",sendOTP);
 router.post("/signup",signup);
 router.post("/login",login);
+router.post("/get/user/data",getSingleUserdata)
+router.get("/get-all/users",getAlluser);
 
 
 module.exports=router;
